@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppCalculator.MainPage"
+             BackgroundColor="#181818">
+
+    <ScrollView>
+        <VerticalStackLayout 
+            Padding="30.8"
+            Spacing="25"
+            VerticalOptions="Center">
+            <Label FontAttributes="Bold"
+                   FontSize="30"
+                   HorizontalTextAlignment="Center"
+                   Text="BMI Calculator"
+                   TextColor="#CCCCCC"/>
+            <Entry
+                x:Name="Weight"
+                BackgroundColor="#2A2A2A"
+                Placeholder="Weight in KG"
+                PlaceholderColor="#7d7c7c"
+                TextColor="#CCCCCC"
+                Keyboard="Numeric"/>
+            
+            <Entry
+                x:Name="Height"
+                BackgroundColor="#2A2A2A"
+                Placeholder="Height in Meter"
+                PlaceholderColor="#7d7c7c"
+                Keyboard="Numeric"
+                TextColor="#CCCCCC"/>
+            
+            <Entry
+                x:Name="BMI"    
+                IsEnabled="False"
+                BackgroundColor="#2A2A2A"
+                Placeholder="Your BMI"
+                PlaceholderColor="#7d7c7c"
+                TextColor="#CCCCCC"/>
+
+
+            <Button Text="Calculate"
+                    BackgroundColor="#0078D4"
+                    TextColor="White"
+                    Clicked="Button_Clicked"></Button>
+
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
